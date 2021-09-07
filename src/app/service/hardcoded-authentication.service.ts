@@ -18,7 +18,8 @@ authenticate(username, password) {
   return false;
 }
 
-isUserLoggedIn() {
+isUserLoggedIn() { 
+ 
   let user =sessionStorage.getItem('authenticaterUser')
   return !(user === null)
 }

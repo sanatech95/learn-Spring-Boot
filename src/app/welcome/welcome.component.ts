@@ -58,6 +58,8 @@ export class WelcomeComponent implements OnInit {
     //console.log(this.service.executeHelloWorldBeanService());
     
     this.service.executeHelloWorldBeanServiceWithPathVariable(this.name).subscribe(
+      //this.service.executeHelloWorldBeanService().subscribe(
+
       response =>  this.handleSuccessfulResponse(response),
     error => this.handleErrorResponse(error)
       );
